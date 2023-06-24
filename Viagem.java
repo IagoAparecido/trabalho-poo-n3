@@ -14,7 +14,7 @@ public class Viagem  extends SQLClass{
     
      public void printViagem(){
         System.out.println(
-           "\n--------------DADOS CLIENTE--------------\n"+
+           "\n--------------DADOS VIAGEM--------------\n"+
            "\nCidade de origem: "+this.cidade_origem +
             "\nCidade destino: "+this.cidade_final+ 
             "\nProduto transportado: "+this.nome_produto_carga+ 

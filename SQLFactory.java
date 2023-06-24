@@ -9,22 +9,25 @@ public class SQLFactory {
          cliente1.nome = "Ricardo";
          cliente1.cpf = "555.222.123-44";
 
+         motorista1.id = 1;
          motorista1.nome = "Fabrício";
          motorista1.cnh = "5533777777";
 
+         viagem1.id = 1;
          viagem1.cidade_origem = "Sinop";
          viagem1.cidade_final = "União do Sul";
          viagem1.nome_produto_carga = "Milho";
  
+         veiculo1.id = 1;
          veiculo1.marca_veiculo = "DAF";
          veiculo1.modelo_veiculo = "DAF FX";
          veiculo1.placa_veiculo = "CX0JD17";
-         veiculo1.carga_maxima = 40.000;
+         veiculo1.carga_maxima = 50.000;
 
+         
+         try {
         //Para inserir dados:
-
-        try {
-            
+           
         // Database.inserirRegistro(cliente1);
         // Database.inserirRegistro(motorista1);
         // Database.inserirRegistro(viagem1);
@@ -46,7 +49,7 @@ public class SQLFactory {
         // Database.deletarRegistro(cliente1);
         // Database.deletarRegistro(motorista1);
         // Database.deletarRegistro(viagem1);
-        // Database.deletarRegistro(veiculo1);
+        Database.deletarRegistro(veiculo1);
 
         //---------------------------------------//
 
@@ -56,19 +59,19 @@ public class SQLFactory {
         // cliente1.printCliente();
 
         // Database.abrirID(motorista1, 1);
-        // cliente1.printMotorista();
+        // motorista1.printMotorista();
 
         // Database.abrirID(viagem1, 1);
-        // cliente1.printViagem();
+        // viagem1.printViagem();
 
         // Database.abrirID(veiculo1, 1);
-        // cliente1.printVeiculo();
+        // veiculo1.printVeiculo();
 
 
         System.out.println("\nQuery realizada com sucesso\n");
        
     } catch (Exception e) {
-      System.out.println("\nErro, tente novamente!\n");
+      System.out.println("\nErro ao realizar a query\n");
     }
     }
 }

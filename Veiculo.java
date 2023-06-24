@@ -15,7 +15,7 @@ public class Veiculo  extends SQLClass {
 
      public void printVeiculo(){
         System.out.println(
-           "\n--------------DADOS CLIENTE--------------\n"+
+           "\n--------------DADOS VEICULO--------------\n"+
            "\nModelo: "+this.modelo_veiculo +
             "\nCarga maxima: "+this.carga_maxima+ 
             "\nPlaca do veiculo: "+this.placa_veiculo+ 
