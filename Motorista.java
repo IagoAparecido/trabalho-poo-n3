@@ -1,13 +1,22 @@
 public class Motorista extends SQLClass{
     
-       @Key
+    @Key
+    int id;
 
     String nome;
     String cnh;
-    int id_veiculo;
-
 
     Motorista(){
         this.setTableName("MOTORISTA");                
     }
+
+    public void printMotorista(){
+        System.out.println(
+           "\n--------------DADOS MOTORISTA--------------\n"+
+           "\nNome: "+this.nome +
+            "\nCNH: "+this.cnh+ 
+            "\n\n---------------------------------\n"
+        );
+    }
 }
+

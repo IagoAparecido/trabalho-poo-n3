@@ -1,7 +1,7 @@
 public class Cliente extends SQLClass {
 
     @Key
-    // int id;
+    int id;
 
     String nome;
     String cpf;
@@ -12,9 +12,10 @@ public class Cliente extends SQLClass {
     
     public void printCliente(){
         System.out.println(
-           
-            this.nome + ", " +
-            this.cpf
+           "\n--------------DADOS CLIENTE--------------\n"+
+           "\nNome: "+this.nome +
+            "\nCPF: "+this.cpf+ 
+            "\n\n---------------------------------\n"
         );
     }
 }

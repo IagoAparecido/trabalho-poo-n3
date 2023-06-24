@@ -6,7 +6,7 @@ import java.lang.reflect.*;
 public class Database {
 
     private static Connection connect() {
-        String url = "jdbc:sqlite:C:\\Users\\Katiana\\Downloads\\Trabalho_Final\\db\\data.db";
+        String url = "jdbc:sqlite:C:\\Users\\iagos\\OneDrive\\Área de Trabalho\\trabalho-poo-n3\\db\\data.db";
 
         Connection connection = null;
         try {
