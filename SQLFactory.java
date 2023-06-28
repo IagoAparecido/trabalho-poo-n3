@@ -6,7 +6,7 @@ public class SQLFactory {
          Veiculo veiculo1 = new Veiculo();
 
          cliente1.id = 1;
-         cliente1.nome = "Ricardo";
+         cliente1.nome = "Rogerio";
          cliente1.cpf = "555.222.123-44";
 
          motorista1.id = 1;
@@ -26,6 +26,7 @@ public class SQLFactory {
 
          
          try {
+          
         //Para inserir dados:
            
         // Database.inserirRegistro(cliente1);
@@ -33,7 +34,9 @@ public class SQLFactory {
         // Database.inserirRegistro(viagem1);
         // Database.inserirRegistro(veiculo1);
 
+
         //---------------------------------------//
+
 
         //Para atualizar os dados:
          
@@ -44,14 +47,6 @@ public class SQLFactory {
 
         //---------------------------------------//
 
-        //Para deletar os dados: 
-
-        // Database.deletarRegistro(cliente1);
-        // Database.deletarRegistro(motorista1);
-        // Database.deletarRegistro(viagem1);
-        Database.deletarRegistro(veiculo1);
-
-        //---------------------------------------//
 
         //Para puxar os dados:
 
@@ -68,10 +63,21 @@ public class SQLFactory {
         // veiculo1.printVeiculo();
 
 
-        System.out.println("\nQuery realizada com sucesso\n");
+        //---------------------------------------//
+
+
+        //Para deletar os dados: 
+
+        // Database.deletarRegistro(cliente1);
+        // Database.deletarRegistro(motorista1);
+        // Database.deletarRegistro(viagem1);
+        // Database.deletarRegistro(veiculo1);
+
+
+        System.out.println("\nQuery realizada com sucesso!\n");
        
     } catch (Exception e) {
-      System.out.println("\nErro ao realizar a query\n");
+      System.out.println("\nErro ao realizar a query!\n");
     }
     }
 }
